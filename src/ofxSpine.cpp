@@ -6,7 +6,6 @@
 //
 //
 
-#include "ofMain.h"
 #include "ofxSpine.h"
 #include <spine.h>
 #include <spine/extension.h>
@@ -18,7 +17,7 @@ void _AtlasPage_createTexture(AtlasPage * self, const char * path){
 	// load image
 	ofImage loader;
 	loader.setUseTexture(false);
-	loader.loadImage(path);
+	loader.load(path);
     
 	// store width & height
 	int imageWidth = loader.getWidth();
